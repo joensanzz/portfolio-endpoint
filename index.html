@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joaquín E. | Henry — Endpoint System Engineer | Microsoft Intune & Autopilot Specialist">
+    <title>Joaquín E. | Henry | Endpoint System Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --azure-blue: #0078D4;
+        }
+        
+        .tailwind-config {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 120 212 / 0.15);
+        }
+        
+        .skill-pill {
+            transition: all 0.2s ease;
+        }
+        
+        .skill-pill:hover {
+            background-color: #0078D4;
+            color: white;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="tailwind-config bg-zinc-950 text-zinc-100 min-h-screen">
+    <!-- NAV -->
+    <nav class="sticky top-0 z-50 bg-zinc-950 border-b border-zinc-800 backdrop-blur-lg">
+        <div class="max-w-screen-2xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-[#0078D4] rounded-2xl flex items-center justify-center text-white font-bold text-xl">JE</div>
+                <h1 class="text-2xl font-semibold tracking-tight">Joaquín E. | Henry</h1>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#skills" class="hover:text-[#0078D4] transition-colors">Tech Stack</a>
+                <a href="#projects" class="hover:text-[#0078D4] transition-colors">Success Stories</a>
+                <a href="#contact" class="hover:text-[#0078D4] transition-colors">Contact</a>
+            </div>
+            
+            <a href="#contact" 
+               class="px-6 py-3 bg-[#0078D4] hover:bg-[#0063b0] text-white rounded-2xl text-sm font-semibold flex items-center gap-x-2 transition-all">
+                <span>Get in touch</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="hero" class="hero-bg pt-20 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-x-2 px-5 py-2 rounded-3xl bg-zinc-900 border border-[#0078D4]/30 text-[#0078D4] text-sm font-medium mb-6">
+                    <div class="w-2 h-2 bg-[#0078D4] rounded-full animate-pulse"></div>
+                    AVAILABLE FOR NEW OPPORTUNITIES
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-4">
+                    Joaquín E. | Henry
+                </h1>
+                <h2 class="text-3xl md:text-4xl font-semibold text-[#0078D4] mb-8">
+                    Endpoint System Engineer <span class="text-zinc-400">|</span> Microsoft Intune &amp; Autopilot
+                </h2>
+                
+                <p class="text-xl text-zinc-300 max-w-2xl leading-relaxed">
+                    Passionate about automation and Zero-Touch deployments. I design, implement, and train teams on secure, 
+                    scalable Modern Workplace solutions using Microsoft Intune, Windows Autopilot, and Azure Entra ID — 
+                    turning complex technical challenges into smooth, repeatable processes.
+                </p>
+                
+                <div class="flex flex-wrap gap-4 mt-12">
+                    <a href="#projects" 
+                       class="px-8 py-4 bg-white text-zinc-950 font-semibold rounded-3xl flex items-center gap-x-3 hover:scale-105 transition-transform">
+                        See my projects
+                        <span class="text-2xl">→</span>
+                    </a>
+                    <a href="https://wa.me/34627151361" target="_blank"
+                       class="px-8 py-4 border border-zinc-700 hover:border-[#0078D4] font-medium rounded-3xl flex items-center gap-x-3 transition-colors">
+                        Chat on WhatsApp
+                    </a>
+                </div>
+                
+                <div class="mt-16 flex items-center gap-x-8 text-sm">
+                    <div class="flex items-center gap-x-2">
+                        <div class="text-emerald-400">●</div>
+                        <span class="text-zinc-400">Open to remote, hybrid &amp; on-site roles</span>
+                    </div>
+                    <div class="h-3 w-px bg-zinc-700"></div>
+                    <div class="text-zinc-400">Seville, Spain • 2-3 weeks notice</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TECH STACK -->
+    <section id="skills" class="py-20 bg-zinc-950 border-t border-b border-zinc-800">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-12">
+                <div>
+                    <span class="px-4 py-1.5 text-xs font-mono tracking-[1px] bg-zinc-900 text-[#0078D4] rounded-3xl">EXPERTISE</span>
+                    <h2 class="text-4xl font-semibold tracking-tight mt-3">Modern Workplace Tech Stack</h2>
+                </div>
+                <p class="text-zinc-400 mt-4 md:mt-0 max-w-xs">Tools and platforms I use daily to deliver Zero-Touch, secure, and automated IT environments.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                <div class="skill-pill bg-zinc-900 hover:bg-[#0078D4] border border-transparent hover:border-[#0078D4] text-white px-6 py-4 rounded-3xl text-center font-medium flex items-center justify-center gap-x-2">
+                    <span>Microsoft Intune</span>
+                </div>
+                <div class="skill-pill bg-zinc-900 hover:bg-[#0078D4] border border-transparent hover:border-[#0078D4] text-white px-6 py-4 rounded-3xl text-center font-medium flex items-center justify-center gap-x-2">
+                    <span>Windows Autopilot</span>
+                </div>
+                <div class="skill-pill bg-zinc-900 hover:bg-[#0078D4] border border-transparent hover:border-[#0078D4] text-white px-6 py-4 rounded-3xl text-center font-medium flex items-center justify-center gap-x-2">
+                    <span>Azure Entra ID</span>
+                </div>
+                <div class="skill-pill bg-zinc-900 hover:bg-[#0078D4] border border-transparent hover:border-[#0078D4] text-white px-6 py-4 rounded-3xl text-center font-medium flex items-center justify-center gap-x-2">
+                    <span>PowerShell</span>
+                </div>
+                <div class="skill-pill bg-zinc-900 hover:bg-[#0078D4] border border-transparent hover:border-[#0078D4] text-white px-6 py-4 rounded-3xl text-center font-medium flex items-center justify-center gap-x-2">
+                    <span>ITIL</span>
+                </div>
+                <div class="skill-pill bg-zinc-900 hover:bg-[#0078D4] border border-transparent hover:border-[#0078D4] text-white px-6 py-4 rounded-3xl text-center font-medium flex items-center justify-center gap-x-2">
+                    <span>Jira</span>
+                </div>
+                <div class="skill-pill bg-zinc-900 hover:bg-[#0078D4] border border-transparent hover:border-[#0078D4] text-white px-6 py-4 rounded-3xl text-center font-medium flex items-center justify-center gap-x-2">
+                    <span>Microsoft 365</span>
+                </div>
+            </div>
+            
+            <p class="text-xs text-zinc-500 mt-8 text-center">+ Active Directory • Conditional Access • RBAC • Zero-Touch Deployment • Workflow Automation • OBS / Streamlabs</p>
+        </div>
+    </section>
+
+    <!-- SUCCESS STORIES / PROJECTS -->
+    <section id="projects" class="py-20 bg-zinc-900">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="px-4 py-1.5 text-xs font-mono tracking-[1px] bg-[#0078D4]/10 text-[#0078D4] rounded-3xl">PROVEN RESULTS</span>
+                <h2 class="text-4xl font-semibold tracking-tight mt-3">Success Stories</h2>
+                <p class="text-zinc-400 mt-3">Real deployments, leadership, and training that deliver measurable impact</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Project 1: HAYS VIP Rollout – NOW WITH RECURRING TRUST SIGNAL -->
+                <div class="card-hover bg-zinc-950 border border-zinc-800 rounded-3xl p-8 h-full">
+                    <div class="flex items-center gap-x-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#0078D4] to-blue-600 rounded-2xl flex items-center justify-center text-white font-bold">H</div>
+                        <div>
+                            <h3 class="font-semibold text-xl">Recurring VIP Corporate Rollouts – HAYS (Torre Sevilla)</h3>
+                            <p class="text-sm text-zinc-400">Multinational HR Consultancy • Cognizant-managed • Trusted Freelance Specialist • Multiple Phases • 2024</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <p class="uppercase text-xs tracking-widest text-zinc-500 mb-1">CHALLENGE</p>
+                            <p class="text-zinc-300">Autopilot misconfigurations causing OOBE failures: devices showing as “not organized”, endless pre-provisioning loops due to residual TPM data, and unregistered Hardware Hashes preventing profile application.</p>
+                        </div>
+                        <div>
+                            <p class="uppercase text-xs tracking-widest text-zinc-500 mb-1">SOLUTION</p>
+                            <p class="text-zinc-300">Re-imaged devices with corporate image • Extracted Hardware Hash via PowerShell (<span class="font-mono">Get-WindowsAutopilotInfo</span>) and registered in tenant • Cleared TPM on legacy enrollments • Executed full White-Glove Pre-Provisioning (OOBE) • Parallel processing of multiple devices with end-user walkthrough and documentation.</p>
+                        </div>
+                        <div>
+                            <p class="uppercase text-xs tracking-widest text-zinc-500 mb-1">RESULT</p>
+                            <div class="space-y-3">
+                                <p class="text-emerald-400 font-medium">~100% success rate • 100% SLA compliance across every phase</p>
+                                <p class="text-emerald-400 font-medium">Repeatedly called back as the preferred freelance field technician for multiple rollout phases — strong client trust and long-term partnership with HAYS &amp; Cognizant.</p>
+                                <p class="text-xs text-zinc-400">Process fully documented and now used as the standard template for future Zero-Touch deployments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Tech Lead – Twitch Partner Streamer & Digital Communities -->
+                <div class="card-hover bg-zinc-950 border border-zinc-800 rounded-3xl p-8 h-full">
+                    <div class="flex items-center gap-x-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center text-white text-2xl">🎥</div>
+                        <div>
+                            <h3 class="font-semibold text-xl">Tech Lead – Twitch Partner Streamer &amp; Digital Communities</h3>
+                            <p class="text-sm text-zinc-400">10,000+ active users • 2021–2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <p class="uppercase text-xs tracking-widest text-zinc-500 mb-1">CHALLENGE</p>
+                            <p class="text-zinc-300">Lead technical strategy and daily operations for a high-volume gaming community while simultaneously training the streamer and team on professional streaming &amp; content tools.</p>
+                        </div>
+                        <div>
+                            <p class="uppercase text-xs tracking-widest text-zinc-500 mb-1">SOLUTION</p>
+                            <p class="text-zinc-300">Designed and implemented IAM automation, user provisioning/deprovisioning workflows (PowerShell + bots) • Built a comprehensive Knowledge Base • Delivered hands-on training sessions on OBS Studio, Streamlabs, Canva, advanced IT troubleshooting, and Microsoft 365 tools • Handled 200+ daily tickets under ITIL while mentoring the streamer and support team.</p>
+                        </div>
+                        <div>
+                            <p class="uppercase text-xs tracking-widest text-zinc-500 mb-1">RESULT</p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-emerald-400 font-medium">15% reduction in repetitive incidents</p>
+                                    <p class="text-xs text-zinc-400 mt-1">+ Streamer &amp; team now fully autonomous on technical setup</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-3xl font-semibold text-[#0078D4]">4.7/5</p>
+                                    <p class="text-xs text-zinc-400">average satisfaction rating</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-zinc-950">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="max-w-xl mx-auto text-center">
+                <h2 class="text-4xl font-semibold tracking-tight mb-3">Ready to modernize your endpoint ecosystem?</h2>
+                <p class="text-zinc-400 mb-10">Let’s talk about Zero-Touch deployments, IAM automation, Modern Workplace strategy, or technical training programs.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/joaqu%C3%ADn-enrique-rodr%C3%ADguez-s%C3%A1nchez-ab4109256/" target="_blank"
+                       class="group flex-1 sm:flex-none flex items-center justify-center gap-x-4 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-[#0078D4] px-8 py-6 rounded-3xl transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[#0078D4]" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5 10.5h-3v-4.5c0-1.1-.9-2-2-2s-2 .9-2 2v4.5h-3v-9h3v1.5c.74-1.13 2.01-1.88 3.5-1.88 2.48 0 4.5 2.02 4.5 4.5v5z"/>
+                        </svg>
+                        <div class="text-left">
+                            <p class="font-semibold">Connect on LinkedIn</p>
+                            <p class="text-xs text-zinc-400">Professional network</p>
+                        </div>
+                    </a>
+                    
+                    <!-- Email -->
+                    <a href="mailto:joensanzz@gmail.com"
+                       class="group flex-1 sm:flex-none flex items-center justify-center gap-x-4 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-[#0078D4] px-8 py-6 rounded-3xl transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[#0078D4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2.01 2.01 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2" />
+                        </svg>
+                        <div class="text-left">
+                            <p class="font-semibold">Send an email</p>
+                            <p class="text-xs text-zinc-400">joensanzz@gmail.com</p>
+                        </div>
+                    </a>
+                    
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/34627151361" target="_blank"
+                       class="group flex-1 sm:flex-none flex items-center justify-center gap-x-4 bg-[#25D366] hover:bg-[#20c35e] text-white px-8 py-6 rounded-3xl transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.074-.297-.15-1.255-.463-2.39-1.485-.888-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.48 0 1.463 1.065 2.879 1.213 3.078.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.355L2 22l1.395-4.1a9.84 9.84 0 01-1.342-5.24c0-5.446 4.43-9.87 9.88-9.87 2.637 0 5.113 1.028 6.974 2.89 1.86 1.86 2.888 4.336 2.888 6.973 0 5.446-4.43 9.875-9.88 9.875" />
+                        </svg>
+                        <div class="text-left">
+                            <p class="font-semibold">Message on WhatsApp</p>
+                            <p class="text-xs opacity-75">Instant reply • +34 627 151 361</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <p class="text-xs text-zinc-500 mt-8">📍 Utrera, Seville, Spain • Bilingual (C2 English) • Open to nationwide relocation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-8 border-t border-zinc-900">
+        <div class="max-w-screen-2xl mx-auto px-6 text-center text-xs text-zinc-500 flex flex-col md:flex-row items-center justify-between gap-y-4">
+            <p>© 2026 Joaquín E. | Henry • Endpoint System Engineer</p>
+            <p class="flex items-center gap-x-5">
+                Built as a single-file Tailwind portfolio • 
+                <a href="https://github.com" target="_blank" class="hover:text-white transition-colors">View source on GitHub</a>
+            </p>
+            <p>Made for Modern Workplace excellence</p>
+        </div>
+    </footer>
+
+    <script>
+        function initializeTailwind() {
+            return {
+                config(userConfig = {}) {
+                    return {
+                        content: [],
+                        theme: {
+                            extend: {
+                                colors: {
+                                    azure: '#0078D4'
+                                }
+                            }
+                        },
+                        plugins: [],
+                        ...userConfig,
+                    }
+                },
+                theme: {
+                    extend: {},
+                }
+            }
+        }
+        const config = initializeTailwind()
+        document.documentElement.setAttribute('data-tailwind-config', JSON.stringify(config))
+        console.log('%c✅ Updated portfolio for Joaquín E. | Henry loaded successfully!', 'color:#0078D4; font-family:monospace; font-size:12px')
+    </script>
+</body>
+</html>
